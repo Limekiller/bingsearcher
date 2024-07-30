@@ -1,0 +1,37 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: #dbf3f1;
+    transition: all 0.2s ease;
+    min-width: 14rem;
+}
+.container {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+button {
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(white, #d3d3d3);
+    box-shadow: #2fbdb075 0px 0px 20px;
+}
+button:hover, button:focus {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+button img {
+    width: 1.25rem;
+}
