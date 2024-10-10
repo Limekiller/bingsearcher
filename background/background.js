@@ -26,7 +26,11 @@ chrome.tabs.onUpdated.addListener(async (tabId, info) => {
                     chrome.tabs.executeScript({
                         code: '(' + performSingleSearch + ')();'
                     })
-                    await delay(7500)
+                    if (i > 1 && i % 4 == 0) {
+                        await delay(910000)
+                    } else {
+                        await delay(7500)
+                    }
                 } else {
                     return
                 }
